@@ -1,4 +1,4 @@
-# SKA-SDC3-Foregrounds
+# Camrbidge SKA Science Data Challenge - Foregrounds
 1. OSKAR simulation
 2. WSCLEAN
 3. Gaussian Process Regression
