@@ -2,7 +2,7 @@
 ## OSKAR Simulation
 The first step is to remove the point sources in the SKA SDC3 data by simulating with [`OSKAR`](https://github.com/OxfordSKA/OSKAR) ([Dulwich et al., 2009](https://pos.sissa.it/132/031/pdf)).
 The SKA End-to-End simulation pipeline we used can be found [here](https://github.com/ycliu23/SKA_Power_Spectrum_and_EoR_Window), 
-which is based on [this version](https://github.com/oharao/SKA_Power_Spectrum_and_EoR_Window) with a modified sky model. The full sky is composed of an outer sky that covers the $\mathrm{2\pi}$ steradians above the horizon and an inner sky model defined within the first null of the station beam pattern at 106 MHz. The point source model we used is the composite GLEAM and LoBES source catalogue provided by the SKAO ([`GLMv2_LoBES03Mar2022_combine.fits`](https://drive.google.com/file/d/14nfYmwlyqL7NzMqWtMxYfaFBccrjxKll/view?usp=drive_link)).
+which is based on [this version](https://github.com/oharao/SKA_Power_Spectrum_and_EoR_Window) with a modified sky model. The full sky is composed of an outer sky that covers the $\mathrm{2\pi}$ steradians above the horizon and an inner sky model defined within the first null of the station beam pattern at 106 MHz. The point source model we used is the composite GLEAM and LoBES source catalogue provided by the SKAO and can be found ([here](https://drive.google.com/file/d/14nfYmwlyqL7NzMqWtMxYfaFBccrjxKll/view?usp=drive_link)).
 
 to simulate a 4-hour track observation of point sources that consists of 1440 time steps, each integrating over 10 seconds. The observation also covers the same frequency range as in the SDC3 from 106 MHz to 196 MHz, with intervals of 0.1 MHz. The simulation is for the point source subtraction from the images of 
 
