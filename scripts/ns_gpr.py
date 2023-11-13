@@ -13,7 +13,7 @@ freqs = np.linspace(start_freq,end_freq,151)
 inpath = 'Sub-band/images/{start_freq}_{end_freq}MHz/processed_cube_{start_freq}_{end_freq}MHz_msn.h5'.format(start_freq=start_freq,end_freq=end_freq)
 data_cube = datacube.CartDataCube.load(inpath)
 data = data_cube.data
-recomb_data = data.real
+recomb_data = np.concatenate([data.real,data.imag],axis=1)
 
 kern_smooth = GPy.kern.RBF(1)
 kern_mix = GPy.kern.RBF(1)
