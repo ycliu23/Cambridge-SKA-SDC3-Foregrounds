@@ -10,5 +10,6 @@ The imaging process utilizes `WSCLEAN` ([Offringa et al., 2014](https://arxiv.or
 The command passed to `WSCLEAN`: "wsclean -reorder -use-wgridder -parallel-gridding 10 -weight natural -oversampling 4095 -kernel-size 15 -nwlayers 1000 -grid-mode kb -taper-edge 100 -padding 2 -name outfile -size 256 256 -scale 128asec -niter 0 -pol xx -make-psf infile" where infile is the input `MeasurementSet` files that contain visibility data and outfile is the output image file WSCLEAN will generate.
 
 ## Foreground Removal
-## MCMC Sampling
+use Gaussian Process Regression and nested sampling
+
 ## Power Spectrum Analysis
