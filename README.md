@@ -33,7 +33,7 @@ The desourced images are obtained by subtracting the image cube of GLEAM and LoB
 This step requires Gaussian Process Regression in a Bayesian framework using nested sampling. The nested sampling is enable by [PolyChord](https://github.com/PolyChord/PolyChordLite/tree/master) ([Handley et al. 2015a](https://arxiv.org/abs/1502.01856), [2015b](https://arxiv.org/abs/1506.00171)).
 
 ```
-python posterior_gpr_clean.py
+python ns_gpr.py
 ```
 After sampling the hyperparameters for the GPR model,
 ```
