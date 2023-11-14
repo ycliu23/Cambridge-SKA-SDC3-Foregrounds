@@ -53,3 +53,13 @@ Once completing the GPR foreground cleaning, the residual 2D power spectra can b
 python cal_ps.py
 ```
 
+## Citation
+@misc{SKAO_Science_Data_Challenge_3,
+author = {Liu, Y., xxx, yyy},
+title = {SKAO-SDC3},
+year = {2023},
+publisher = {GitHub},
+journal = {GitHub repository},
+howpublished = {\url{https://github.com/ycliu23/Cambridge-SKA-SDC3-Foregrounds}}
+}
+
