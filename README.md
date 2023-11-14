@@ -27,9 +27,25 @@ The imaging process utilizes `WSCLEAN` ([Offringa et al., 2014](https://arxiv.or
 ```
 wsclean -reorder -use-wgridder -parallel-gridding 10 -weight natural -oversampling 4095 -kernel-size 15 -nwlayers 1000 -grid-mode kb -taper-edge 100 -padding 2 -name OUTFILE -size 256 256 -scale 128asec -niter 0 -pol xx -make-psf INFILE
 ```
-The desourced images are obtained by subtracting the image cube of GLEAM and LoBES sources from the SDC3 image cube. As PSF deconvolution needs to be performed in the Fourier space, the images are transformed to gridded visibilities using `ps_eor` that can be obtained [here](https://gitlab.com/flomertens/ps_eor).
+The desourced images are obtained by subtracting the image cube of GLEAM and LoBES sources from the SDC3 image cube. As PSF deconvolution needs to be performed in the Fourier space, the images are transformed to gridded visibilities using the Python package `ps_eor` that can be obtained [here](https://gitlab.com/flomertens/ps_eor).
 
 ## Foreground Removal
 This step requires Gaussian Process Regression in a Bayesian framework using nested sampling. The nested sampling is enable by [PolyChord](https://github.com/PolyChord/PolyChordLite/tree/master) ([Handley et al. 2015a](https://arxiv.org/abs/1502.01856), [2015b](https://arxiv.org/abs/1506.00171)).
 
+```
+python posterior_gpr_clean.py
+```
+After sampling the hyperparameters for the GPR model,
+```
+python posterior_gpr_clean.py
+```
+We also use `[anesthetic](https://github.com/handley-lab/anesthetic)` to post-process the MCMC sampling chain results and to obtain the posterior density distribution of each hyperparameter in the GPR model:
+```
+python posterior_plot.py
+```
+
 ## Power Spectrum Analysis
+```
+python cal_ps.py
+```
+
