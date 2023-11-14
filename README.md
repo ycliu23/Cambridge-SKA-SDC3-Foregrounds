@@ -61,7 +61,7 @@ title = {SKAO-SDC3},
 year = {2023},
 publisher = {GitHub},
 journal = {GitHub repository},
-howpublished = {https://github.com/ycliu23/Cambridge-SKA-SDC3-Foregrounds}
+howpublished = {\url{https://github.com/ycliu23/Cambridge-SKA-SDC3-Foregrounds}}
 }
 ```
 
