@@ -45,7 +45,7 @@ python posterior_plot.py
 ```
 
 ## Power Spectrum Analysis
-Once completing the GPR foreground cleaning, the residual 2D power spectra can be calculated at each k_\parallel and k_\perp bin:
+Once completing the GPR foreground cleaning, the residual 2D power spectra can be calculated at each $k_\parallel$ and $k_\perp$ bin:
 
 ```
 python cal_ps.py
