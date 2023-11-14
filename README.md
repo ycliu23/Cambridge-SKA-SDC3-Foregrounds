@@ -5,19 +5,20 @@ which is based on [this version](https://github.com/oharao/SKA_Power_Spectrum_an
 
 The setting passed to `OSKAR`:
 ```
-`FILENAME` = 'gleam_lobes' <br>
-`MIN_FREQ` = 106 # MHz <br>
-`MAX_FREQ` = 196 # MHz <br>
-`FREQ_INTERVAL` = 0.1 # MHz <br>
-`STATION` = 'ska_one_station' <br>
-`OBS_START_TIME` = '2021-09-21 14:12:40.13' <br>
-`OBS_LENGTH` = '04:00:00' <br>
-`OBS_NUM_TIMES` = 1440 <br>
-`INT_TIME` = 10 <br>
-`EOR` = False <br>
-`DIFFUSE` = True <br>
-`PS` = True <br>
-`NOISE` = False <br>
+FILENAME = 'gleam_lobes'
+MIN_FREQ = 106
+MAX_FREQ = 196
+FREQ_INTERVAL = 0.1
+STATION = 'ska_one_station'
+OBS_START_TIME = '2021-09-21 14:12:40.13'
+OBS_LENGTH = '04:00:00'
+OBS_NUM_TIMES = 1440
+INT_TIME = 10
+
+EOR = False
+DIFFUSE = False
+PS = True
+NOISE = False
 ```
 
 ## Imaging
