@@ -1,5 +1,5 @@
 # Camrbidge SKA Science Data Challenge 3 (SKA SDC3) - Foregrounds
-<img src="illustration/ska_sdc3_pipeline.png" width="48">
+<img src="illustration/ska_sdc3_pipeline.png" width="100">
 
 ## OSKAR Simulation
 The first step is to remove the point sources by performing a mock observation of SKA1-Low using `OSKAR` ([Dulwich et al. 2009](https://pos.sissa.it/132/031/pdf)) using the same settings as the SKA SDC3. The `OSKAR` simulator is available from [this website](https://github.com/OxfordSKA/OSKAR) and the SKA End-to-End simulation pipeline can be found [here](https://github.com/ycliu23/SKA_Power_Spectrum_and_EoR_Window), 
