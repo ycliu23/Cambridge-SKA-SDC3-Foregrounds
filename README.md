@@ -5,7 +5,7 @@ which is based on [this version](https://github.com/oharao/SKA_Power_Spectrum_an
 
 The setting passed to `OSKAR`:
 
-FILENAME = 'gleam_lobes'
+FILENAME = 'gleam_lobes' \\
 MIN_FREQ = 106 # MHz
 MAX_FREQ = 196 # MHz
 FREQ_INTERVAL = 0.1 # MHz
