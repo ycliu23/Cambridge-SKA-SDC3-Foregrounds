@@ -1,3 +1,16 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+Author: Yuchen Liu
+Affiliation: Cavendish Astrophysics, University of Cambridge
+Email: yl871@cam.ac.uk
+
+Created in April 2023
+
+Description: Power spectral analysis of foreground-cleaned residual visibilities
+"""
+
 from ps_eor import datacube, pspec, psutil
 import numpy as np
 import matplotlib

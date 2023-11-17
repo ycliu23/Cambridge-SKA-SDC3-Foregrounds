@@ -1,3 +1,16 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+Author: Yuchen Liu
+Affiliation: Cavendish Astrophysics, University of Cambridge
+Email: yl871@cam.ac.uk
+
+Created in April 2023
+
+Description: Gaussian process regression foreground cleaning based on the MCMC-sampled parameters with the highest posterior probability density 
+"""
+
 import numpy as np
 import GPy
 from ps_eor import datacube

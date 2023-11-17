@@ -1,3 +1,16 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+Author: Yuchen Liu
+Affiliation: Cavendish Astrophysics, University of Cambridge
+Email: yl871@cam.ac.uk
+
+Created in April 2023
+
+Description: Posterior density plots based on the nested sampling chains
+"""
+
 import numpy as np
 from anesthetic import read_chains, make_2d_axes
 import matplotlib

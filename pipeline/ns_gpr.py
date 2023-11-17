@@ -1,3 +1,16 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+"""
+Author: Yuchen Liu
+Affiliation: Cavendish Astrophysics, University of Cambridge
+Email: yl871@cam.ac.uk
+
+Created in April 2023
+
+Description: Nested sampling of the GPR model parameters
+"""
+
 import numpy as np
 from ps_eor import datacube
 import GPy
@@ -9,7 +22,8 @@ from pypolychord.priors import UniformPrior
 
 start_freq = 106
 end_freq = 121
-freqs = np.linspace(start_freq,end_freq,151)
+n_channels = 105
+freqs = np.linspace(start_freq,end_freq,n_channels)
 inpath = ''
 data_cube = datacube.CartDataCube.load(inpath)
 data = data_cube.data
