@@ -47,7 +47,7 @@ python posterior_plot.py
 ```
 
 ## Power Spectrum Analysis
-Once completing the GPR foreground cleaning, the residual gridded visibilities are Fourier transformed along the frequency axis to 3D power spectra that are subsequently cylindrically averaged into the resultant 2D power spectra each $k_\parallel$ and $k_\perp$ bin, where $k = \sqrt{k_\parallel^2 + k_\perp^2}$:
+Once completing the GPR foreground cleaning, the residual gridded visibilities are Fourier transformed along the frequency axis to 3D power spectra that are subsequently cylindrically averaged into the resultant 2D power spectra each $k_\parallel$ and $k_\perp$ bin, where $\textbf{k} = \sqrt{k_\parallel^2 + k_\perp^2}$:
 
 ```
 python cal_ps.py
