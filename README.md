@@ -2,8 +2,8 @@
 ![alt text](illustration/ska_sdc3_pipeline.png?raw=true)
 
 ## OSKAR Simulation
-The first step is to remove the point sources by performing a mock observation of SKA1-Low using `OSKAR` ([Dulwich et al. 2009](https://pos.sissa.it/132/031/pdf)) using the same settings as the SKA SDC3. The `OSKAR` simulator is available from [this website](https://github.com/OxfordSKA/OSKAR) and the SKA End-to-End simulation pipeline can be found [here](https://github.com/ycliu23/SKA_Power_Spectrum_and_EoR_Window), 
-which is based on [this version](https://github.com/oharao/SKA_Power_Spectrum_and_EoR_Window) with a modified sky model. The full sky is composed of an outer sky that covers the $\mathrm{2\pi}$ steradians above the horizon and an inner sky model defined within the first null of the station beam pattern at 106 MHz. The point source model we used is the composite GLEAM and LoBES source catalogue provided by the SKAO and can be found [here](https://drive.google.com/file/d/14nfYmwlyqL7NzMqWtMxYfaFBccrjxKll/view?usp=drive_link). The mock observation covers 4 hours to track the point sources in the catalogue and consists of 1440 time steps, each integrating over 10 seconds. The simulation also spans the same frequency range as in the SDC3 from 106 MHz to 196 MHz, with intervals of 0.1 MHz.
+We start the foreground mitigation with the removal of bright point sources in the SDC3 images. The desourcing is accomplished by performing a mock observation of SKA1-Low with `OSKAR` ([Dulwich et al. 2009](https://pos.sissa.it/132/031/pdf)) using the same settings as the SKA SDC3. The `OSKAR` simulator is available from [this website](https://github.com/OxfordSKA/OSKAR) and the SKA End-to-End simulation pipeline can be found [here](https://github.com/ycliu23/SKA_Power_Spectrum_and_EoR_Window), 
+which is based on [this version](https://github.com/oharao/SKA_Power_Spectrum_and_EoR_Window) with a modified sky model. The full sky is composed of an outer sky that covers the $\mathrm{2\pi}$ steradians above the horizon and an inner sky model defined within the first null of the station beam pattern (~11.4 &deg;) at 106 MHz. The point source model, the composite GLEAM and LoBES source catalogue, is kindly provided by the SKA Observatory in the SDC3 and can be found [here](https://drive.google.com/file/d/14nfYmwlyqL7NzMqWtMxYfaFBccrjxKll/view?usp=drive_link). The mock observation covers 4 hours to track the point sources in the catalogue and consists of 1440 time steps, each integrating over 10 seconds. The simulation also spans the same frequency range as in the SDC3 from 106 MHz to 196 MHz, with intervals of 0.1 MHz.
 
 The settings that are passed to `OSKAR`:
 ```
@@ -29,10 +29,10 @@ The imaging process utilizes `WSCLEAN` ([Offringa et al., 2014](https://arxiv.or
 ```
 wsclean -reorder -use-wgridder -parallel-gridding 10 -weight natural -oversampling 4095 -kernel-size 15 -nwlayers 1000 -grid-mode kb -taper-edge 100 -padding 2 -name OUTFILE -size 256 256 -scale 128asec -niter 0 -pol xx -make-psf INFILE
 ```
-The desourced images are obtained by subtracting the image cube of GLEAM and LoBES sources from the SDC3 image cube. As PSF deconvolution needs to be performed in the Fourier space, the images are transformed to gridded visibilities using the Python package `ps_eor` that can be obtained [here](https://gitlab.com/flomertens/ps_eor).
+The desourced images are obtained by subtracting the image cube of GLEAM and LoBES sources from the SDC3 image cube. As PSF deconvolution needs to be performed in the Fourier space, the images are then transformed into gridded visibilities using the Python package `ps_eor` that can be obtained [here](https://gitlab.com/flomertens/ps_eor). The details of PSF deconvolution are comprehensively presented in Equation (1) - (3) of [Mertens et al. (2020)](https://arxiv.org/abs/2002.07196).
 
 ## Foreground Removal
-This step requires Gaussian Process Regression in a Bayesian framework using nested sampling. The nested sampling is enable by [PolyChord](https://github.com/PolyChord/PolyChordLite/tree/master) ([Handley et al. 2015a](https://arxiv.org/abs/1502.01856), [2015b](https://arxiv.org/abs/1506.00171)).
+This step involves Gaussian Process Regression (GPR) within a Bayesian framework using nested sampling. The GPR model is capable of distinguishing different components of the observed signal by pre-defining an analytic form for their covariance matrices, where the model evidence and parameter optimization are enabled by using the nested sampler [PolyChord](https://github.com/PolyChord/PolyChordLite/tree/master) ([Handley et al. 2015a](https://arxiv.org/abs/1502.01856), [2015b](https://arxiv.org/abs/1506.00171)).
 
 ```
 python ns_gpr.py
@@ -47,7 +47,7 @@ python posterior_plot.py
 ```
 
 ## Power Spectrum Analysis
-Once completing the GPR foreground cleaning, the residual 2D power spectra can be calculated at each $k_\parallel$ and $k_\perp$ bin:
+Once completing the GPR foreground cleaning, the residual gridded visibilities are Fourier transformed along the frequency axis to 3D power spectra that are subsequently cylindrically averaged into the resultant 2D power spectra each $k_\parallel$ and $k_\perp$ bin, where $k = \sqrt{k_\parallel^2 + k_\perp^2}$:
 
 ```
 python cal_ps.py
