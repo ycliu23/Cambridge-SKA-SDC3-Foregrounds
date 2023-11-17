@@ -41,7 +41,7 @@ After sampling the hyperparameters for the GPR model,
 ```
 python posterior_gpr_clean.py
 ```
-The post-processing of the MCMC sampling chain results utilizes [anesthetic](https://github.com/handley-lab/anesthetic) in order to obtain the posterior density distribution of each hyperparameter in the GPR model:
+The post-processing of the MCMC sampling chain results is baed on [anesthetic](https://github.com/handley-lab/anesthetic) that can be used to summarize and plot the posterior density distribution of each hyperparameter in the GPR model:
 ```
 python posterior_plot.py
 ```
