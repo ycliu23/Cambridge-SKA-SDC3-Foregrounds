@@ -32,7 +32,7 @@ wsclean -reorder -use-wgridder -parallel-gridding 10 -weight natural -oversampli
 The desourced images are obtained by subtracting the image cube of GLEAM and LoBES sources from the SDC3 image cube. As PSF deconvolution needs to be performed in the Fourier space, the images are then transformed into gridded visibilities using the Python package [ps_eor](https://gitlab.com/flomertens/ps_eor), where we refer interested readers to Equation (1) - (3) of [Mertens et al. (2020)](https://arxiv.org/abs/2002.07196) for more details of PSF normalization.
 
 ## Foreground Removal
-This step involves Gaussian Process Regression (GPR) within a Bayesian framework using nested sampling. The GPR model is capable of distinguishing different components of the observed signal by pre-defining analytic forms for their covariance matrices, where the model evidence and parameter optimization are enabled by using the nested sampler [PolyChord](https://github.com/PolyChord/PolyChordLite/tree/master) ([Handley et al. 2015a](https://arxiv.org/abs/1502.01856), [2015b](https://arxiv.org/abs/1506.00171)).
+This step involves Gaussian Process Regression (GPR) within a Bayesian framework. The GPR model is capable of distinguishing different components of the observed signal by pre-defining analytic forms for their covariance matrices, where the model evidence and parameter optimization are computed with the nested sampler [PolyChord](https://github.com/PolyChord/PolyChordLite/tree/master) ([Handley et al. 2015a](https://arxiv.org/abs/1502.01856), [2015b](https://arxiv.org/abs/1506.00171)).
 
 ```
 python ns_gpr.py
