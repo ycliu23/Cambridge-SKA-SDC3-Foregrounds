@@ -1,4 +1,4 @@
-# Camrbidge SKA Science Data Challenge 3 (SKA SDC3) - Foregrounds
+# Camrbidge SKA Science Data Challenge 3 (SKA SDC3 Cantabrigians) - Foregrounds
 ![alt text](illustration/ska_sdc3_pipeline.png?raw=true)
 
 ## OSKAR Simulation
