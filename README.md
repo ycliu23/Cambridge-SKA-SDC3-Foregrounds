@@ -4,7 +4,7 @@
 ## OSKAR Simulation
 We start the foreground mitigation with the removal of bright point sources in the SDC3 images. 
 
-The desourcing is accomplished by performing mock SKA1-Low observations with `OSKAR` ([Dulwich et al. 2009](https://pos.sissa.it/132/031/pdf)) of the full-sky discrete sources.
+The desourcing is accomplished by performing mock SKA1-Low observations with `OSKAR` ([Dulwich et al. 2009](https://pos.sissa.it/132/031/pdf)) of the discrete sources for the entire sky.
 
 The `OSKAR` simulator is available from [this release](https://github.com/OxfordSKA/OSKAR) and the simulation pipeline can be found [here](https://github.com/ycliu23/SKA_Power_Spectrum_and_EoR_Window), 
 which is based on the [SKA End-to-End pipeline](https://github.com/oharao/SKA_Power_Spectrum_and_EoR_Window) with a modified sky model. 
