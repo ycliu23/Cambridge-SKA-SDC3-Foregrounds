@@ -8,7 +8,7 @@ Email: yl871@cam.ac.uk
 
 Created in April 2023
 
-Description: Power spectral analysis of foreground-cleaned residual visibilities
+Description: Power spectral analysis of foreground-subtracted residual visibilities
 """
 
 from ps_eor import datacube, pspec, psutil
