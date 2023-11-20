@@ -1,7 +1,7 @@
 # Camrbidge SKA Science Data Challenge 3 (SKA SDC3 Cantabrigians) - Foregrounds
 
 
-<img src="badges/SDC3a_reproducible_pipeline.png" width="5%" height="5%">
+<img src="badges/SDC3a_reproducible_pipeline.png" width="10%" height="10%">
 <div align="center">
 </div>
 
@@ -70,8 +70,6 @@ python posterior_plot.py
 ```
 
 ## Power Spectrum Analysis
-
-<div align="justify">
 Once completing the GPR foreground cleaning, the residual gridded visibilities are Fourier transformed along the frequency axis to 3D power spectra that are subsequently cylindrically averaged into the resultant 2D power spectra each $k_\parallel$ and $k_\perp$ bin, where $k_\perp^2 = \sqrt{k_x^2 + k_y^2}$ and $k_\parallel = k_z$:
 
 ```
