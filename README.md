@@ -103,7 +103,5 @@ howpublished = {\url{https://github.com/ycliu23/Cambridge-SKA-SDC3-Foregrounds}}
 }
 ```
 
-## Licence
-By accessing and using this repository, users are required to acknowledge and agree to comply with the terms and conditions outlined in `LICENSE`. 
-
-This SKA SDC3 pipeline is free to use for academic purposes.
+## License
+This SKA SDC3 pipeline is free to use for academic purposes. However, users are required to acknowledge and agree to comply with the terms and conditions under [the MIT  License](LICENSE) by accessing and using this repository.
