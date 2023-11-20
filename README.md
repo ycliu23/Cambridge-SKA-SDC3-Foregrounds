@@ -106,4 +106,4 @@ howpublished = {\url{https://github.com/ycliu23/Cambridge-SKA-SDC3-Foregrounds}}
 ## Licence
 By accessing and using this repository, users are required to acknowledge and agree to comply with the terms and conditions outlined in `LICENSE`. 
 
-The SKA SDC3 pipeline is free to use for academic purposes.
+This SKA SDC3 pipeline is free to use for academic purposes.
