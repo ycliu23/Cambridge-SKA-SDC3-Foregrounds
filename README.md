@@ -1,7 +1,7 @@
 # Camrbidge SKA Science Data Challenge 3 (SKA SDC3 Cantabrigians) - Foregrounds
 
 
-<img src="badges/SDC3a_reproducible_pipeline_small.png" width="100" height="100">
+<img src="badges/SDC3a_reproducible_pipeline.png" width="500" height="500">
 
 ## Pipeline Flowchart
 
