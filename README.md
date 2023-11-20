@@ -52,9 +52,9 @@ python cal_vis.py
 We also refer interested readers to Equation (1) - (3) of [Mertens et al. (2020)](https://arxiv.org/abs/2002.07196) for more details of PSF normalization.
 
 ## Foreground Removal
-<div align="justify">
-This step involves Gaussian Process Regression (GPR) within a Bayesian framework. The GPR model is capable of distinguishing different components of the observed signal by pre-defining analytic forms for their covariance matrices, where the model evidence and parameter optimization are computed with the nested sampler [PolyChord](https://github.com/PolyChord/PolyChordLite/tree/master) ([Handley et al. 2015a](https://arxiv.org/abs/1502.01856), [2015b](https://arxiv.org/abs/1506.00171)).
-</div>
+This step involves Gaussian Process Regression (GPR) within a Bayesian framework. The GPR model is capable of distinguishing different components of the observed signal by pre-defining analytic forms for their covariance matrices.
+
+The model evidence and parameter optimization are computed with the nested sampler [PolyChord](https://github.com/PolyChord/PolyChordLite/tree/master) ([Handley et al. 2015a](https://arxiv.org/abs/1502.01856), [2015b](https://arxiv.org/abs/1506.00171)).
 
 ```
 python ns_gpr.py
@@ -69,7 +69,10 @@ python posterior_plot.py
 ```
 
 ## Power Spectrum Analysis
+
+<div align="justify">
 Once completing the GPR foreground cleaning, the residual gridded visibilities are Fourier transformed along the frequency axis to 3D power spectra that are subsequently cylindrically averaged into the resultant 2D power spectra each $k_\parallel$ and $k_\perp$ bin, where $k_\perp^2 = \sqrt{k_x^2 + k_y^2}$ and $k_\parallel = k_z$:
+</div>
 
 ```
 python cal_ps.py
