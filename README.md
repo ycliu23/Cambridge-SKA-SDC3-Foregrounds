@@ -2,7 +2,7 @@
 
 
 
-![Reproducibility badge](badges/SDC3a_reproducible_pipeline_small.png)
+![Reproducibility badge](badges/SDC3a_reproducible_pipeline_small.png|width=100)
 
 ## Pipeline Flowchart
 
