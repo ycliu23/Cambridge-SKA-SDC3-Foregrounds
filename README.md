@@ -7,8 +7,10 @@
 
 ## Installation
 
-### OSKAR installation
-Instructions for installing `OSKAR` are described in detail in the [documentation](https://ska-telescope.gitlab.io/sim/oskar/install/install.html). For usage on HPC clusters, we recommend using the containerized image available from [here](https://github.com/OxfordSKA/OSKAR/releases), or alternatively built from `docker` or `singularity`.
+### OSKAR Installation
+Instructions for installing `OSKAR` are described in detail in the [documentation](https://ska-telescope.gitlab.io/sim/oskar/install/install.html). 
+
+For usage on HPC clusters, we recommend using the containerized image available from [here](https://github.com/OxfordSKA/OSKAR/releases), or alternatively built from `docker` or `singularity`.
 
 ### Conda Environment
 The pipeline utilizes the dependencies specified by `environment.yaml`. The conda environment configuration file can be used to set up a virtual environment with which to run the Python scripts.
