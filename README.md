@@ -14,6 +14,7 @@ For usage on HPC clusters, we recommend using the containerized image available 
 
 ### Conda Environment
 The pipeline utilizes the dependencies specified by `environment.yaml`. The conda environment configuration file can be used to set up a virtual environment with which to run the Python scripts.
+
 To set up the environment for running the pipeline:
 ```
 conda env create --name SDC3a --file environment.yaml
