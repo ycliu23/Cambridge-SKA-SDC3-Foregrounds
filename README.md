@@ -1,8 +1,6 @@
 # Camrbidge SKA Science Data Challenge 3 (SKA SDC3 Cantabrigians) - Foregrounds
 
-<div align="center">
-<img src="badges/SDC3a_reproducible_pipeline.png" width="50%" height="50%">
-</div>
+<img src="badges/SDC3a_reproducible_pipeline.png" width="30%" height="30%">
 
 ## Pipeline Flowchart
 
@@ -52,8 +50,9 @@ python cal_vis.py
 We also refer interested readers to Equation (1) - (3) of [Mertens et al. (2020)](https://arxiv.org/abs/2002.07196) for more details of PSF normalization.
 
 ## Foreground Removal
+<div align="justify">
 This step involves Gaussian Process Regression (GPR) within a Bayesian framework. The GPR model is capable of distinguishing different components of the observed signal by pre-defining analytic forms for their covariance matrices, where the model evidence and parameter optimization are computed with the nested sampler [PolyChord](https://github.com/PolyChord/PolyChordLite/tree/master) ([Handley et al. 2015a](https://arxiv.org/abs/1502.01856), [2015b](https://arxiv.org/abs/1506.00171)).
-
+</div>
 ```
 python ns_gpr.py
 ```
