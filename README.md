@@ -9,7 +9,7 @@
 ### OSKAR
 Instructions for installing `OSKAR` are described in detail in the [documentation](https://ska-telescope.gitlab.io/sim/oskar/install/install.html).
 
-For usage on HPC clusters, we recommend using the containerized image using `docker` or `singularity` or available from [here](https://github.com/OxfordSKA/OSKAR/releases).
+For usage on HPC clusters, we recommend using the containerized image available from [here](https://github.com/OxfordSKA/OSKAR/releases) and alternatively built from `docker` or `singularity`.
 
 ### Conda Environment
 
