@@ -65,7 +65,6 @@ The desourced images are obtained by subtracting the image cube of GLEAM and LoB
 ```
 python cal_vis.py
 ```
-We also refer interested readers to Equation (1) - (3) of [Mertens et al. (2020)](https://arxiv.org/abs/2002.07196) for more details of PSF normalization.
 
 ## Foreground Removal
 This step involves Gaussian Process Regression (GPR) within a Bayesian framework. The GPR model is capable of distinguishing different components of the observed signal by pre-defining analytic forms for their covariance matrices.
