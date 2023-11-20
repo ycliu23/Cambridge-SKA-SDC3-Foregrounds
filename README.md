@@ -5,6 +5,15 @@
 ## Pipeline Flowchart
 ![Flowchart](illustration/ska_sdc3_pipeline.png)
 
+## Installation
+### OSKAR
+Instructions for installing `OSKAR` are described in detail in the [documentation](https://ska-telescope.gitlab.io/sim/oskar/install/install.html).
+
+For usage on HPC clusters, we recommend using the containerized image using `docker` or `singularity` or available from [here](https://github.com/OxfordSKA/OSKAR/releases).
+
+### Conda Environment
+
+
 ## OSKAR Simulation
 We start the foreground mitigation with the removal of bright point sources in the SDC3 images. 
 
