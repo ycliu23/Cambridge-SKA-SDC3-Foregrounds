@@ -4,7 +4,7 @@
 
 ## Pipeline Flowchart
 <p align="center">
-<img src="illustration/ska_sdc3_pipeline.png" width=60% height=80%>
+<img src="illustration/ska_sdc3_pipeline.png" width=70% height=70%>
 </p>
 
 ## Installation
