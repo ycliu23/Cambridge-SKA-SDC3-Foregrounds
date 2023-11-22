@@ -2,19 +2,19 @@
 
 <img src="https://uc9e62fbdf8f7783342b43806158.previews.dropboxusercontent.com/p/thumb/ACFT81THAHQgC3tmtABXCEcjCq-zQXPIetE0LWVjHhJxHJhGFLwr4DKHhF5TTG7pNXAbQTnKv42bWuZsmcnwzC147D6Ezzt0ixyZ55b39_8ifDcfgwtucK6Amws1q94uwDf-uTSA_p3WQftzDm6H43M85246IyH6ezHiI7rmRq6wmKI1_UPw6mtRnRRkIR2Zi6YPokxEmuoTkMx06mpPbZ8CIKoVILsHTtIz8br67iTA58HRR8DD5FfLj_ZQC36NI_wwWL-FKcZZxN88YErKmmqvKdGfkuVUS512018brpnhAF4wjm40gR0u8vUJbwYU1dt-hgnKozhzsMFOtg3O47e73BO2Bk_PCiACN2GsR5HUKzvC_aw1anOuhL9fk3XUFwU/p.png">
 
-## Pipeline Flowchart
+## Pipeline flowchart
 <p align="center">
 <img src="illustration/ska_sdc3_pipeline.png" width=80% height=80%>
 </p>
 
 ## Installation
 
-### OSKAR Installation
+### OSKAR installation
 Instructions for installing `OSKAR` are described in the [documentation](https://ska-telescope.gitlab.io/sim/oskar/install/install.html). 
 
 For usage on HPC clusters, we recommend using the containerized image available from [here](https://github.com/OxfordSKA/OSKAR/releases), or alternatively built from `docker` or `singularity`.
 
-### Conda Environment
+### Conda environment
 The pipeline utilizes the dependencies specified in `environment.yaml`. The conda environment configuration file can be used to set up a virtual environment with which to run the Python scripts.
 
 To set up the environment for running the pipeline:
@@ -26,7 +26,7 @@ To activate the created environment:
 conda activate SDC3a
 ```
 
-## OSKAR Simulation
+## OSKAR simulation
 We start the foreground mitigation with the removal of bright point sources in the SDC3 images. 
 
 The desourcing is accomplished by performing mock SKA1-Low observations with `OSKAR` ([Dulwich et al. 2009](https://pos.sissa.it/132/031/pdf)) of the discrete sources for the entire sky.
@@ -68,7 +68,7 @@ The desourced images are obtained by subtracting the image cube of GLEAM and LoB
 python cal_vis.py
 ```
 
-## Foreground Removal
+## Foreground removal
 This step involves Gaussian Process Regression (GPR) within a Bayesian framework. The GPR model is capable of distinguishing different components of the observed signal by pre-defining analytic forms for their covariance matrices.
 
 The model evidence and parameter optimization are computed with the nested sampler [PolyChord](https://github.com/PolyChord/PolyChordLite/tree/master) ([Handley et al. 2015a](https://arxiv.org/abs/1502.01856), [2015b](https://arxiv.org/abs/1506.00171)).
@@ -85,7 +85,7 @@ The post-processing of the MCMC sampling chain results is based on [anesthetic](
 python posterior_plot.py
 ```
 
-## Power Spectrum Analysis
+## Power spectrum analysis
 Once completing the GPR foreground cleaning, the residual gridded visibilities are Fourier transformed along the frequency axis to 3D power spectra that are subsequently cylindrically averaged into the resultant 2D power spectra each $k_\parallel$ and $k_\perp$ bin, where $k_\perp^2 = \sqrt{k_x^2 + k_y^2}$ and $k_\parallel = k_z$:
 
 ```
