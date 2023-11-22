@@ -19,7 +19,7 @@ The pipeline utilizes the dependencies specified in `environment.yaml`. The cond
 
 To set up the environment for running the pipeline:
 ```
-conda env create --name SDC3a --file environment.yaml
+conda env create --file environment.yaml
 ```
 To activate the created environment:
 ```
