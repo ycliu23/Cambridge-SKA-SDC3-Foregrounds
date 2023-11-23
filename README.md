@@ -95,7 +95,7 @@ python cal_ps.py
 ## Citation
 ```
 @misc{SKAO_Science_Data_Challenge_3a,
-author = {Liu, Y., XXX, YYY},
+author = {Liu, Y., O'hara, O., de Lera Acedo, E., Coles, J., Dulwich, F., Anstey, D., Bevins, H., Gessey-Jones, T., Leeney, S.},
 title = {SKAO-SDC3a},
 year = {2023},
 publisher = {GitHub},
