@@ -96,7 +96,7 @@ python cal_ps.py
 ```
 @misc{SKAO_Science_Data_Challenge_3a,
 author = {},
-title = {SKAO-SDC3a},
+title = {SKAO SDC3a Cantabrigians},
 year = {2023},
 publisher = {GitHub},
 journal = {GitHub repository},
