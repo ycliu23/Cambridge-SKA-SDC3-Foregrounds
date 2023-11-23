@@ -15,15 +15,15 @@ Instructions for installing `OSKAR` are described in the [documentation](https:/
 For usage on HPC clusters, we recommend using the containerized image available from [here](https://github.com/OxfordSKA/OSKAR/releases), or alternatively built from `docker` or `singularity`.
 
 ### Conda environment
-The pipeline utilizes the dependencies specified in `environment.yaml`. The conda environment configuration file can be used to set up a virtual environment with which to run the Python scripts.
+The pipeline utilizes the dependencies specified in `environment.yaml`. The `conda` environment configuration file can be used to set up a virtual environment with which to run the Python scripts.
 
 To set up the environment for running the pipeline:
 ```
 conda env create --file environment.yaml
 ```
-To activate the created environment:
+This will create a `conda` environment named `sdc3a` and to activate the created environment:
 ```
-conda activate SDC3a
+conda activate sdc3a
 ```
 
 ## OSKAR simulation
