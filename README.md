@@ -10,7 +10,7 @@
 ## Installation
 
 ### OSKAR installation
-Instructions for installing `OSKAR` are described in the [documentation](https://ska-telescope.gitlab.io/sim/oskar/install/install.html). 
+The `OSKAR` simulator is available from [this release](https://github.com/OxfordSKA/OSKAR) and instructions for the installation are described in the [documentation](https://ska-telescope.gitlab.io/sim/oskar/install/install.html). 
 
 For usage on HPC clusters, we recommend using the containerized image available from [here](https://github.com/OxfordSKA/OSKAR/releases), or alternatively built from `docker` or `singularity`.
 
@@ -31,7 +31,7 @@ We start the foreground mitigation with the removal of bright point sources in t
 
 The desourcing is accomplished by performing mock SKA1-Low observations with `OSKAR` ([Dulwich et al. 2009](https://pos.sissa.it/132/031/pdf)) of the discrete sources for the entire sky.
 
-The `OSKAR` simulator is available from [this release](https://github.com/OxfordSKA/OSKAR) and the simulation pipeline can be found [here](https://github.com/ycliu23/SKA_Power_Spectrum_and_EoR_Window), 
+The simulation pipeline can be found [here](https://github.com/ycliu23/SKA_Power_Spectrum_and_EoR_Window), 
 which is based on the [SKA End-to-End pipeline](https://github.com/oharao/SKA_Power_Spectrum_and_EoR_Window) with a modified sky model. 
 
 The settings provided to `OSKAR`:
