@@ -17,9 +17,9 @@ author = {Liu, Y., O’Hara, O. S. D., de Lera Acedo, E., Coles, J., Dulwich, F.
 title = {SKAO SDC3a Cantabrigians},
 month = {nov},
 year = {2023},
-publisher = {GitHub},
-journal = {GitHub repository},
-doi = {},
+publisher = {Github},
+journal = {Zenodo},
+doi = {10.5281/zenodo.10223261},
 howpublished = {\url{https://github.com/ycliu23/Cambridge-SKA-SDC3-Foregrounds}}
 }
 ```
