@@ -3,6 +3,8 @@
 
 <img src="https://uc9e62fbdf8f7783342b43806158.previews.dropboxusercontent.com/p/thumb/ACFT81THAHQgC3tmtABXCEcjCq-zQXPIetE0LWVjHhJxHJhGFLwr4DKHhF5TTG7pNXAbQTnKv42bWuZsmcnwzC147D6Ezzt0ixyZ55b39_8ifDcfgwtucK6Amws1q94uwDf-uTSA_p3WQftzDm6H43M85246IyH6ezHiI7rmRq6wmKI1_UPw6mtRnRRkIR2Zi6YPokxEmuoTkMx06mpPbZ8CIKoVILsHTtIz8br67iTA58HRR8DD5FfLj_ZQC36NI_wwWL-FKcZZxN88YErKmmqvKdGfkuVUS512018brpnhAF4wjm40gR0u8vUJbwYU1dt-hgnKozhzsMFOtg3O47e73BO2Bk_PCiACN2GsR5HUKzvC_aw1anOuhL9fk3XUFwU/p.png">
 
+The data analysis pipeline, designed for the Square Kilometre Array Science Data Challenge 3a (SKA SDC3a), is intended to separate the 21-cm signal from astrophysical foregrounds. The foreground mitigation is based on a hybrid strategy based on both foreground removal with Gaussian Process Regression (GPR) models and foreground avoidance. Nested sampling is incorporated in the pipeline for Bayesian inference of the model parameters. The flowchart illustrates the SKA data processing and can be found in `Cambridge-SKA-SDC3-Foregrounds/illustration`, and scripts are provided in `Cambridge-SKA-SDC3-Foregrounds/pipeline` for realization of the steps implemented in the workflow.
+
 ## Pipeline flowchart
 <p align="center">
 <img src="illustration/ska_sdc3_pipeline.png" width=80% height=80%>
