@@ -19,7 +19,7 @@ month = {nov},
 year = {2023},
 publisher = {GitHub},
 journal = {GitHub repository},
-doi = {xxx},
+doi = {},
 howpublished = {\url{https://github.com/ycliu23/Cambridge-SKA-SDC3-Foregrounds}}
 }
 ```
