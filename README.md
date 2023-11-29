@@ -8,7 +8,11 @@
 <img src="illustration/ska_sdc3_pipeline.png" width=80% height=80%>
 </p>
 
-The data analysis pipeline, designed for the Square Kilometre Array Science Data Challenge 3a (SKA SDC3a), is intended to separate the 21-cm signal from astrophysical foregrounds. The foreground mitigation is based on a hybrid strategy based on both foreground removal with Gaussian Process Regression (GPR) models and foreground avoidance. Nested sampling is incorporated in the pipeline for Bayesian inference of the model parameters. The flowchart illustrates the SKA data processing and can be found in `Cambridge-SKA-SDC3-Foregrounds/illustration`, and scripts are provided in `Cambridge-SKA-SDC3-Foregrounds/pipeline` for realization of the steps implemented in the workflow.
+The data analysis pipeline, designed for the Square Kilometre Array Science Data Challenge 3a (SKA SDC3a), is intended to separate the 21-cm signal from astrophysical foregrounds. 
+
+The foreground mitigation is based on a hybrid strategy based on both foreground removal with Gaussian Process Regression (GPR) models and foreground avoidance. Nested sampling is incorporated in the pipeline for Bayesian inference of the model parameters. 
+
+The flowchart illustrates the SKA data processing and can be found in `Cambridge-SKA-SDC3-Foregrounds/illustration`, and scripts are provided in `Cambridge-SKA-SDC3-Foregrounds/pipeline` for realization of the steps implemented in the workflow.
 
 ## Licence
 This SKA SDC3 pipeline is free to use for academic purposes. However, users are required to acknowledge and agree to comply with the terms and conditions under [the MIT  License](LICENSE) by using, modifying and distributing this repository.
