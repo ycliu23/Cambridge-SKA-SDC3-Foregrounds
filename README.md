@@ -7,6 +7,9 @@
 <img src="illustration/ska_sdc3_pipeline.png" width=80% height=80%>
 </p>
 
+## Licence
+This SKA SDC3 pipeline is free to use for academic purposes. However, users are required to acknowledge and agree to comply with the terms and conditions under [the MIT  License](LICENSE) by using, modifying and distributing this repository.
+
 ## Citation
 ```
 @misc{SKAO_Science_Data_Challenge_3a,
@@ -20,9 +23,6 @@ doi = {xxx},
 howpublished = {\url{https://github.com/ycliu23/Cambridge-SKA-SDC3-Foregrounds}}
 }
 ```
-
-## Licence
-This SKA SDC3 pipeline is free to use for academic purposes. However, users are required to acknowledge and agree to comply with the terms and conditions under [the MIT  License](LICENSE) by using, modifying and distributing this repository.
 
 ## Installation
 
