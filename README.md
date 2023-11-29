@@ -12,7 +12,7 @@ The data analysis pipeline, designed for the Square Kilometre Array Science Data
 
 The foreground mitigation is based on a hybrid strategy based on both foreground removal with Gaussian Process Regression (GPR) models and foreground avoidance. Nested sampling is incorporated in the pipeline for Bayesian inference of the model parameters. 
 
-The flowchart illustrates the SKA data processing and can be found in `illustration`, and scripts are provided in `pipeline` for realization of the steps implemented in the workflow.
+The flowchart illustrates the SKA data processing and can be found in the `illustration` directory, and scripts are provided in the `pipeline` directory for realization of the steps implemented in the workflow.
 
 ## Licence
 This SKA SDC3 pipeline is free to use for academic purposes. However, users are required to acknowledge and agree to comply with the terms and conditions under [the MIT  License](LICENSE) by using, modifying and distributing this repository.
