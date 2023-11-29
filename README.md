@@ -19,7 +19,6 @@ title = {SKAO SDC3a Cantabrigians},
 month = {nov},
 year = {2023},
 publisher = {Github},
-journal = {Github},
 version = {1.0.0},
 doi = {10.5281/zenodo.10223261},
 howpublished = {\url{https://github.com/ycliu23/Cambridge-SKA-SDC3-Foregrounds}}
