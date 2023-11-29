@@ -7,6 +7,23 @@
 <img src="illustration/ska_sdc3_pipeline.png" width=80% height=80%>
 </p>
 
+## Citation
+```
+@misc{SKAO_Science_Data_Challenge_3a,
+author = {Liu, Y., O’Hara, O. S. D., de Lera Acedo, E., Coles, J., Dulwich, F., Leeney, S. A. K., Gessey-Jones, T., Anstey, D.},
+title = {SKAO SDC3a Cantabrigians},
+month = {nov},
+year = {2023},
+publisher = {GitHub},
+journal = {GitHub repository},
+doi = {xxx},
+howpublished = {\url{https://github.com/ycliu23/Cambridge-SKA-SDC3-Foregrounds}}
+}
+```
+
+## License
+This SKA SDC3 pipeline is free to use for academic purposes. However, users are required to acknowledge and agree to comply with the terms and conditions under [the MIT  License](LICENSE) by using, modifying and distributing this repository.
+
 ## Installation
 
 ### OSKAR installation
@@ -91,20 +108,3 @@ Once completing the GPR foreground cleaning, the residual gridded visibilities a
 ```
 python cal_ps.py
 ```
-
-## Citation
-```
-@misc{SKAO_Science_Data_Challenge_3a,
-author = {Liu, Y., O’Hara, O. S. D., de Lera Acedo, E., Coles, J., Dulwich, F., Leeney, S. A. K., Gessey-Jones, T., Anstey, D.},
-title = {SKAO SDC3a Cantabrigians},
-month = {nov},
-year = {2023},
-publisher = {GitHub},
-journal = {GitHub repository},
-doi = {xxx},
-howpublished = {\url{https://github.com/ycliu23/Cambridge-SKA-SDC3-Foregrounds}}
-}
-```
-
-## License
-This SKA SDC3 pipeline is free to use for academic purposes. However, users are required to acknowledge and agree to comply with the terms and conditions under [the MIT  License](LICENSE) by using, modifying and distributing this repository.
