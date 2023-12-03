@@ -87,7 +87,7 @@ The imaging process utilizes `WSCLEAN` ([Offringa et al., 2014](https://arxiv.or
 ```
 wsclean -reorder -use-wgridder -parallel-gridding 10 -weight natural -oversampling 4095 -kernel-size 15 -nwlayers 1000 -grid-mode kb -taper-edge 100 -padding 2 -name OUTFILE -size 256 256 -scale 128asec -niter 0 -pol xx -make-psf INFILE
 ```
-The desourced images are obtained by subtracting the image cube of GLEAM and LoBES sources from the SDC3 image cube. As PSF deconvolution needs to be performed in the Fourier space, the images are then transformed into gridded visibilities using the Python package [ps_eor](https://gitlab.com/flomertens/ps_eor):
+The desourced images are obtained by subtracting the image cube of GLEAM and LoBES sources from the SDC3 image cube. As PSF deconvolution needs to be performed in the Fourier space, the images are then transformed into gridded visibilities using the Python package [ps-eor](https://gitlab.com/flomertens/ps_eor):
 ```
 python cal_vis.py
 ```
