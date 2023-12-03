@@ -39,7 +39,7 @@ The `OSKAR` simulator is available from [this release](https://github.com/Oxford
 For usage on HPC clusters, we recommend using the containerized image available from [here](https://github.com/OxfordSKA/OSKAR/releases), or alternatively built from `docker` or `singularity`.
 
 ### Pipeline environment
-The latest version of the pipeline can be obtained by:
+The latest version of the pipeline can be obtained by running:
 ```
 git clone https://github.com/ycliu23/Cambridge-SKA-SDC3-Foregrounds.git
 ```
