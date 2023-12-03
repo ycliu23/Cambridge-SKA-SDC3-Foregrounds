@@ -38,7 +38,11 @@ The `OSKAR` simulator is available from [this release](https://github.com/Oxford
 
 For usage on HPC clusters, we recommend using the containerized image available from [here](https://github.com/OxfordSKA/OSKAR/releases), or alternatively built from `docker` or `singularity`.
 
-### Conda environment
+### Pipeline environment
+The latest version of the pipeline can be obtained by:
+```
+git clone https://github.com/ycliu23/Cambridge-SKA-SDC3-Foregrounds.git
+```
 The pipeline utilizes the dependencies specified in `environment.yaml`. The `conda` environment configuration file can be used to set up a virtual environment with which to run the pipeline scripts.
 
 To set up the environment for running the pipeline:
