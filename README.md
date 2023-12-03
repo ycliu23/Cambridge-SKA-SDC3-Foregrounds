@@ -118,4 +118,4 @@ Once completing the GPR foreground cleaning, the residual gridded visibilities a
 ```
 python cal_ps.py
 ```
-In the step of power spectrum estimation, Fourier modes, dominated by the intrinsic and instrumentally corrupted foregrounds, are also masked in the resultant cylindrical power spectra based on a foreground avoidance strategy, separated from a region that represents the EoR window.
+In this final step of power spectrum estimation, Fourier modes, dominated by the intrinsic and instrumentally corrupted foregrounds, are also masked in the resultant cylindrical power spectra based on a foreground avoidance strategy, separated from a region that represents the EoR window.
