@@ -114,10 +114,8 @@ python posterior_plot.py
 ```
 
 ## Power spectrum analysis
-Once completing the GPR foreground cleaning, the residual gridded visibilities are Fourier transformed along the frequency axis and cylindrically averaged into the 2D power spectra in each $k_\parallel$ and $k_\perp$ bin, where $k_\perp^2 = \sqrt{k_x^2 + k_y^2}$ and $k_\parallel = k_z$. 
-
-The Fourier modes that are dominated by the intrinsic and instrumentally corrupted foregrounds are also masked in the resultant cylindrical power spectra based on a foreground avoidance strategy:
-
+Once completing the GPR foreground cleaning, the residual gridded visibilities are Fourier transformed along the frequency axis and cylindrically averaged into the 2D power spectra in each $k_\parallel$ and $k_\perp$ bin, where $k_\perp^2 = \sqrt{k_x^2 + k_y^2}$ and $k_\parallel = k_z$:
 ```
 python cal_ps.py
 ```
+In the step of power spectrum estimation, Fourier modes, dominated by the intrinsic and instrumentally corrupted foregrounds, are also masked in the resultant cylindrical power spectra based on a foreground avoidance strategy, separated from a region that represents the EoR window.
