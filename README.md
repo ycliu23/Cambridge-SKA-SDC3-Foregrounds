@@ -55,7 +55,7 @@ conda activate sdc3a
 ```
 
 ## OSKAR simulation
-We start the foreground mitigation with the removal of bright point sources in the SDC3 images. 
+We start the foreground mitigation from removing bright point sources present in the SDC3 images. 
 
 The total sky intensity is desourced by first performing mock SKA1-Low observations with `OSKAR` ([Dulwich et al. 2009](https://pos.sissa.it/132/031/pdf)) of the discrete sources for the entire sky.
 
