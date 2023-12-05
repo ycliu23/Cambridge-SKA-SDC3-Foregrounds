@@ -5,7 +5,7 @@
 
 ## Pipeline flowchart
 <p align="center">
-<img src="illustration/ska_sdc3_pipeline.png" width=80% height=80%>
+<img src="illustration/ska_sdc3_pipeline.png" width=30% height=30%>
 </p>
 
 The data analysis pipeline, designed for the Square Kilometre Array Science Data Challenge 3a (SKA SDC3a), is intended to separate the 21-cm signal from astrophysical foregrounds. 
