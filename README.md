@@ -1,7 +1,7 @@
 # Camrbidge SKA Science Data Challenge 3 (SKA SDC3 Cantabrigians) - Foregrounds
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10223261.svg)](https://doi.org/10.5281/zenodo.10223261)
 
-<img src="badges/SDC3a_reproducible_pipeline.png" width=30% height=30%>
+<img src="badges/SDC3a_reproducible_pipeline.png" width=25% height=25%>
 
 ## Pipeline flowchart
 <p align="center">
