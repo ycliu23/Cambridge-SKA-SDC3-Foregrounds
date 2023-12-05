@@ -19,7 +19,7 @@ This SKA SDC3 pipeline is free to use for academic purposes. However, users are 
 
 ## Citation
 ```
-@software{SKAO_Science_Data_Challenge_3a,
+@misc{SKAO_Science_Data_Challenge_3a,
 author = {Liu, Y., O’Hara, O. S. D., de Lera Acedo, E., Coles, J., Dulwich, F., Leeney, S. A. K., Gessey-Jones, T., Anstey, D.},
 title = {SKAO SDC3a Cantabrigians},
 month = {nov},
