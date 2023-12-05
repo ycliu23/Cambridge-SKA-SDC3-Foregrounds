@@ -1,11 +1,11 @@
 # Camrbidge SKA Science Data Challenge 3 (SKA SDC3 Cantabrigians) - Foregrounds
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10223261.svg)](https://doi.org/10.5281/zenodo.10223261)
 
-<img src="badges/SDC3a_reproducible_pipeline.png">
+<img src="badges/SDC3a_reproducible_pipeline.png" width=30% height=30%>
 
 ## Pipeline flowchart
 <p align="center">
-<img src="illustration/ska_sdc3_pipeline.png" width=30% height=30%>
+<img src="illustration/ska_sdc3_pipeline.png" width=80% height=80%>
 </p>
 
 The data analysis pipeline, designed for the Square Kilometre Array Science Data Challenge 3a (SKA SDC3a), is intended to separate the 21-cm signal from astrophysical foregrounds. 
