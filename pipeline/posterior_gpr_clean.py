@@ -34,7 +34,7 @@ def gpr_clean(pair):
     data = data_cube.data
     recomb_data = np.concatenate([data.real, data.imag],axis=1)
     
-    samples = read_chains('ns_{}_{}_MHz_estimate/gpr'.format(lower,upper))
+    samples = read_chains('ns_{}_{}_MHz/gpr'.format(lower,upper))
     var_smooth, l_smooth, var_mix, l_mix, var_21, l_21, n, _, _, _ = samples.mean()
     
     kern_smooth = GPy.kern.RBF(1,variance=var_smooth,lengthscale=l_smooth)
