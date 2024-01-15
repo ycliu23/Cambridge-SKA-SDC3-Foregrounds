@@ -27,7 +27,7 @@ os.system('mkdir -p posterior_plot')
 
 def posterior_plot(pair):
     lower,upper = pair
-    folder = 'ns_{}_{}MHz_estimate/gpr'.format(lower,upper)
+    folder = 'ns_{}_{}MHz/gpr'.format(lower,upper)
     samples = read_chains(folder)
     # prior = samples.prior()
     names = ['p%s'%i for i in range(6)]
