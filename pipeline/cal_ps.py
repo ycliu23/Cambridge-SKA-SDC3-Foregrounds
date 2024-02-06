@@ -105,7 +105,7 @@ def cal_ps(file):
     plt.xscale('log')
     plt.yscale('log')
     plt.colorbar()
-    plt.savefig(outpath+'ps2d_res_{}_{}MHz'.format(freq_lower,freq_upper)+str(weighting)+'.png',bbox_inches='tight')
+    plt.savefig(outpath+'ps2d_res_{}_{}MHz'.format(freq_lower,freq_upper)+'.png',bbox_inches='tight')
     
     plt.figure()
     plt.pcolormesh(k_per,k_par_centre,binned_error,norm='log',cmap='jet')
@@ -114,7 +114,7 @@ def cal_ps(file):
     plt.xscale('log')
     plt.yscale('log')
     plt.colorbar()
-    plt.savefig(outpath+'ps2d_err_res_{}_{}MHz'.format(freq_lower,freq_upper)+str(weighting)+'.png',bbox_inches='tight')
+    plt.savefig(outpath+'ps2d_err_res_{}_{}MHz'.format(freq_lower,freq_upper)+'.png',bbox_inches='tight')
     
     ### Submission
     np.savetxt(outpath+'Cantabrigians_{:.1f}MHz-{:.1f}MHz.data'.format(freq_lower,freq_upper),binned_data)
