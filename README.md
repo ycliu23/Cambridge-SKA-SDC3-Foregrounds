@@ -61,21 +61,14 @@ The total sky intensity is desourced by first performing mock SKA1-Low observati
 
 The settings provided to `OSKAR`:
 ```
-FILENAME = 'gleam_lobes'
+SKY_MODEL = 'gleam_lobes'
 MIN_FREQ = 106
 MAX_FREQ = 196
 FREQ_INTERVAL = 0.1
-
-STATION = 'ska_one_station'
 OBS_START_TIME = '2021-09-21 14:12:40.13'
 OBS_LENGTH = '04:00:00'
 OBS_NUM_TIMES = 1440
 INT_TIME = 10
-
-EOR = False
-DIFFUSE = False
-PS = True
-NOISE = False
 ```
 The SKA End-to-End simulation is performed with a modified sky model, composed of an outer sky that covers the $\mathrm{2\pi}$ steradians above the horizon and an inner sky model defined within the first null of the station beam pattern (~11.4&deg;) at 106 MHz. 
 
