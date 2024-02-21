@@ -72,7 +72,7 @@ INT_TIME = 10
 ```
 The OSKAR simulation is based on the [SKA-Low End-to-End Simulation Pipeline](https://github.com/oharao/SKA_Power_Spectrum_and_EoR_Window) ([O'Hara et al. 2024](https://arxiv.org/abs/2402.04008)) with a modified sky model, composed of an outer sky that covers the $\mathrm{2\pi}$ steradians above the horizon and an inner sky model defined within the first null of the station beam pattern (~11.4&deg;) at 106 MHz. 
 
-The point source model, the composite GLEAM and LoBES source catalogue, is kindly provided by the SKA Observatory in the SDC3 and can be found [here](https://drive.google.com/file/d/14nfYmwlyqL7NzMqWtMxYfaFBccrjxKll/view?usp=drive_link). 
+The point source model, the composite GLEAM and LoBES source catalogue, is provided by the SKA SDC3 committee and can be found [here](https://drive.google.com/file/d/14nfYmwlyqL7NzMqWtMxYfaFBccrjxKll/view?usp=drive_link). 
 
 The mock observations cover 4 hours to track the point sources in the catalogue and consist of 1440 time steps, each integrating over 10 seconds. The simulation also spans the same frequency range as in the SDC3 from 106 MHz to 196 MHz, with intervals of 0.1 MHz.
 
