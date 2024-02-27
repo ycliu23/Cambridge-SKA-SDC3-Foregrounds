@@ -22,7 +22,7 @@ from pypolychord.priors import UniformPrior
 
 start_freq = 106
 end_freq = 121
-n_channels = 105
+n_channels = 151
 freqs = np.linspace(start_freq,end_freq,n_channels)
 inpath = ''
 data_cube = datacube.CartDataCube.load(inpath)
