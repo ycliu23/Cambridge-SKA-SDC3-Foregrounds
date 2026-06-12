@@ -31,6 +31,9 @@ howpublished = {\url{https://github.com/ycliu23/Cambridge-SKA-SDC3-Foregrounds}}
 }
 ```
 
+## Acknowledgement
+This work has been enabled by access to facilities and the scientific and technical support provided by the UK SKA Regional Centre (UKSRC). The UKSRC is a collaboration between the University of Cambridge, University of Edinburgh, Durham University, University of Hertfordshire, University of Manchester, University College London, and the UKRI STFC Scientific Computing (STFC) at RAL. The UKSRC is supported by funding from the UKRI STFC.
+
 ## Installation
 
 ### OSKAR installation
@@ -109,6 +112,3 @@ Once completing the GPR foreground cleaning, the residual gridded visibilities a
 python cal_ps.py
 ```
 In this final step of power spectrum estimation, Fourier modes, dominated by the intrinsic and instrumentally corrupted foregrounds, are also masked in the resultant cylindrical power spectra based on a foreground avoidance strategy, separated from a region that represents the EoR window.
-
-## Acknowledgement
-This work has been enabled by access to facilities and the scientific and technical support provided by the UK SKA Regional Centre (UKSRC). The UKSRC is a collaboration between the University of Cambridge, University of Edinburgh, Durham University, University of Hertfordshire, University of Manchester, University College London, and the UKRI STFC Scientific Computing (STFC) at RAL. The UKSRC is supported by funding from the UKRI STFC.
